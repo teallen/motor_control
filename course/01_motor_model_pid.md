@@ -16,10 +16,14 @@
 简化 DC 电机可以分成电气方程和机械方程：
 
 ```text
+电气方程
 V = R i + L di/dt + Ke w
+机械方程
 J dw/dt = Kt i - tau_load - b w - tau_friction
+运动学关系
 dtheta/dt = w
 ```
+
 
 其中：
 
