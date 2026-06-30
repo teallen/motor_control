@@ -37,7 +37,19 @@ ctest --test-dir build
 ./build/examples/sim_tuning_suite
 ```
 
-示例程序会在 `outputs/` 下生成 CSV 文件。你可以用 Python、MATLAB、Excel 或其他工具画出位置、速度、电流、电压等曲线。
+示例程序会在 `outputs/` 下生成 CSV 文件。推荐用仓库自带可视化脚本直接出图：
+
+```bash
+python3 tools/plot_csv.py outputs/dc_position_pid.csv
+```
+
+默认会保存到 `outputs/plots/dc_position_pid.png`。如果想弹出交互窗口：
+
+```bash
+python3 tools/plot_csv.py outputs/dc_position_pid.csv --show
+```
+
+也可以用 Python、MATLAB、Excel 或其他工具自行画图。
 
 ## 代码结构
 

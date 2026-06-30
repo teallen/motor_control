@@ -80,6 +80,14 @@ cmake --build build
 outputs/dc_position_pid.csv
 ```
 
+可视化：
+
+```bash
+python3 tools/plot_csv.py outputs/dc_position_pid.csv
+```
+
+图片默认保存到 `outputs/plots/dc_position_pid.png`。如果想弹出交互窗口，加 `--show`。
+
 建议画这些列：
 
 - `target_position_rad` 和 `position_rad`：看位置跟踪。
