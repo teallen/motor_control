@@ -8,7 +8,10 @@
 
 ```bash
 ./build/examples/sim_cascaded_servo
+python3 tools/plot_csv.py outputs/cascaded_servo.csv
 ```
+
+图片默认保存到 `outputs/plots/cascaded_servo.png`。
 
 画出：
 
